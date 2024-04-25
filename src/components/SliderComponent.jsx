@@ -19,7 +19,7 @@ function SliderComponent() {
   });
   return (
     <div className="">
-      <div className=" absolute w-[29.8rem] h-[29.8rem] backimage  bg-cover rounded-xl">
+      <div className=" absolute w-[29.8rem] h-[29.8rem]   bg-cover rounded-xl">
         <Swiper
           className=""
           modules={[Navigation, Pagination, A11y]}
