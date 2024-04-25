@@ -2,13 +2,14 @@ import React from "react";
 import { useSwiper } from "swiper/react";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import "./SliderComponent.css";
 
 function BtnController() {
   const swiper = useSwiper();
   return (
     <div className="">
       <div className="w-[30rem] h-[10rem] bg-[#D9D9D9] relative rounded-2xl mt-[8rem] ml-[-2rem]">
-        <div className="absolute w-[29.7rem] h-[9.8rem]  bg-[url('./public/Rectangle29.png')] bg-cover top-[2px] left-[1px] rounded-xl ">
+        <div className="absolute w-[29.7rem] h-[9.8rem]  backimage2 bg-cover top-[2px] left-[1px] rounded-xl ">
           <div className="w-full flex justify-center align-middle gap-[6rem] mt-[1.2rem] ">
             {/* first */}
             <div onClick={() => swiper.slidePrev()}>
