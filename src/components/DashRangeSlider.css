@@ -1,0 +1,86 @@
+input {
+    --c: #46EDF5; /* active color */
+    --l: 18px; /* line tickness */
+    --s: 30px; /* thumb size */
+    
+    width: 15rem;
+    height: var(--s); /* needed for Firefox*/
+    --_c: color-mix(in srgb, var(--c), #000 var(--p,0%));
+    -webkit-appearance :none;
+    -moz-appearance :none;
+    appearance :none;
+    background: 
+      linear-gradient(-90deg,#46EDF5 60%,#0000 0) 100%/8% calc(var(--l) - 1px) repeat-x;
+    
+    cursor: pointer;
+    overflow: hidden;
+  }
+  input:focus-visible,
+  input:hover{
+    --p: 25%;
+  }
+  
+  /* chromium */
+  input[type="range" i]::-webkit-slider-thumb{
+    height: var(--s);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: var(--_c);
+    -webkit-appearance: none;
+    appearance: none;
+    transition: .3s;
+  }
+  /* Firefox */
+  input[type="range"]::-moz-range-thumb {
+    height: var(--s);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: var(--_c);
+    border-image: linear-gradient(var(--_c) 0 0) 0 0 0 1/calc(50% - var(--l)/2) 0 calc(50% - var(--l)/2) 100vw/0 0 0 100vw;
+    -webkit-appearance: none;
+    appearance: none;
+    transition: .3s;
+  }
+
+
+  
+ .bgblue-300::-webkit-slider-runnable-track {
+    background: 
+    linear-gradient(-90deg,#055a5e 60%,#0000 0) 100%/8% calc(var(--l) - 1px) repeat-x;
+}
+ .bgblue-500::-webkit-slider-runnable-track {
+    background: 
+    linear-gradient(-90deg,#17767b 60%,#0000 0) 100%/8% calc(var(--l) - 1px) repeat-x;
+}
+ .bgblue-700::-webkit-slider-runnable-track {
+    background: 
+      linear-gradient(-90deg,#20a0a7 60%,#0000 0) 100%/8% calc(var(--l) - 1px) repeat-x;
+}
+ .bgblue-800::-webkit-slider-runnable-track {
+    background: 
+    linear-gradient(-90deg,#03f2ff 60%,#0000 0) 100%/8% calc(var(--l) - 1px) repeat-x;
+}
+
+/* firefox */
+.bgblue-300::-moz-range-track {
+    background: 
+    linear-gradient(-90deg,#055a5e 60%,#0000 0) 100%/8% calc(var(--l) - 1px) repeat-x;
+  }
+
+  .bgblue-500::-moz-range-track {
+    background: 
+    linear-gradient(-90deg,#17767b 60%,#0000 0) 100%/8% calc(var(--l) - 1px) repeat-x;
+  }
+  
+  .bgblue-700::-moz-range-track {   
+    background: 
+    linear-gradient(-90deg,#20a0a7 60%,#0000 0) 100%/8% calc(var(--l) - 1px) repeat-x;
+  }
+
+  .bgblue-800::-moz-range-track {   
+    background: 
+      linear-gradient(-90deg,#03f2ff 60%,#0000 0) 100%/8% calc(var(--l) - 1px) repeat-x;
+  }
+
+  
+  

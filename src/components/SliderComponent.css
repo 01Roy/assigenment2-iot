@@ -1,0 +1,11 @@
+.animated-component {
+    opacity: 100%;
+    transform: translateY(10rem); /* Adjust as needed */
+    transition: opacity 0.8s ease-in, transform 0.8s ease-in;
+  }
+  
+  .animated-component-enter {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  

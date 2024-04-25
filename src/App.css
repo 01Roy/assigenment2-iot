@@ -1,0 +1,39 @@
+.App {
+  margin: auto;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+}
+
+.swiper {
+  padding: 2rem;
+}
+
+.swiper .res-slide {
+  /* border: 2px solid hsl(210, 13%, 20%); */
+  border-radius: 20px;
+}
+
+.swiper-nav-btns button {
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  background-color: #2B3135;
+  color: #fff;
+  margin: 0px 0.5rem;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  margin-top: 30px;
+  transition: all .5s;
+}
+
+.swiper-nav-btns button:hover {
+  background-color: hsl(210, 100%, 40%);
+  cursor: pointer;
+}
+
+.res-slide:nth-child(1) {
+  /* background: center / cover no-repeat url("https://res.cloudinary.com/mister-shadrack/image/upload/v1618444282/samples/landscapes/nature-mountains.jpg"); */
+}
+
+.res-slide:nth-child(2) {
+  /* background: center / cover no-repeat url("https://res.cloudinary.com/mister-shadrack/image/upload/v1618444278/samples/landscapes/beach-boat.jpg"); */
+}
